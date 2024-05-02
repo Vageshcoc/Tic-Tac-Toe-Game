@@ -19,6 +19,9 @@ public class TicTacToe {
             printBoard(board);
             System.out.println("**********");
             computerTurn(board);
+            if(isGameFinished(board)){
+                break;
+            }
         }
         scanner.close();
     }
